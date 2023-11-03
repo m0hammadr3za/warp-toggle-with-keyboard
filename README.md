@@ -2,11 +2,11 @@
 
 ## Use Case
 
-This program is designed for Windows 11 users who use Cloudflare Warp and want to toggle the Warp connection quickly and easily using a keyboard shortcut. It provides a convenient way to enable or disable Cloudflare Warp with just a key combination.
+This program is designed for Windows 11 users who use Cloudflare Warp and want to toggle the Warp connection quickly and easily using a keyboard shortcut(ctrl+shift+x). It provides a convenient way to enable or disable Cloudflare Warp with just a key combination.
 
 ## How Does It Work
 
-The program relies on image recognition to find specific UI elements on your Windows 11 desktop. When you trigger the keyboard shortcut, the program performs the following steps:
+The program relies on image recognition to find specific UI elements on your Windows 11 desktop. When you trigger the keyboard shortcut which by default is ctrl+shift+x, the program performs the following steps:
 
 1. It locates and clicks the "Show Hidden Icons" button in the Windows taskbar.
 2. It finds the Cloudflare Warp icon in the taskbar and clicks on it.
