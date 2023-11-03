@@ -1,7 +1,5 @@
 # Cloudflare Warp Toggle Shortcut
 
-## Use Case
-
 This program is designed for Windows 11 users who use Cloudflare Warp and want to toggle the Warp connection quickly and easily using a keyboard shortcut(ctrl+shift+x). It provides a convenient way to enable or disable Cloudflare Warp with just a key combination.
 
 ## How Does It Work
@@ -18,8 +16,8 @@ The program relies on image recognition to find specific UI elements on your Win
 
 Before running `script.py`, you need to have python and the following packages installed:
 
-- PyAutoGUI
-- Keyboard
+-   PyAutoGUI
+-   Keyboard
 
 You can install the required packages using pip:
 
@@ -29,7 +27,7 @@ pip install pyautogui keyboard
 
 To run `build.sh` you need to have the following package:
 
-- Pyinstaller
+-   Pyinstaller
 
 You can install it using pip:
 
