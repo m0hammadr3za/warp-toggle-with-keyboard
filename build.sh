@@ -3,19 +3,21 @@
 # Build the executable
 pyinstaller --onefile \
             --noconsole \
-            --add-data "show-hidden-icons;show-hidden-icons" \
-            --add-data "warp-icon;warp-icon" \
-            --add-data "toggle-image;toggle-image" \
             script.py
 
 # Rename the .exe file
 mv dist/script.exe dist/cloudflare-warp-toggle-shortcut.exe
 
 # Create "executable" directory if it doesn't exist
-mkdir -p executable
+mkdir -p "Cloudflare warp keyboard shortcut"
 
 # Move the renamed .exe file to the "executable" directory
-mv dist/cloudflare-warp-toggle-shortcut.exe executable/
+mv dist/cloudflare-warp-toggle-shortcut.exe "Cloudflare warp keyboard shortcut"/
+
+# Copy assets to "executable" directory
+cp -r show-hidden-icons/ "Cloudflare warp keyboard shortcut"/
+cp -r toggle-image/ "Cloudflare warp keyboard shortcut"/
+cp -r warp-icon/ "Cloudflare warp keyboard shortcut"/
 
 # Cleanup
 rm -rf build dist script.spec
